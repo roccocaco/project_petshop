@@ -1,0 +1,58 @@
+export const servicos = [
+    {
+        idServico: 1,
+        pet: "gato",
+        servico: "banho",
+        preco: 49.99,
+        cliente: false,
+    },
+    {
+        idServico: 2,
+        pet: "gato",
+        servico: "banho",
+        preco: 24.99,
+        cliente: true,
+    },
+    {
+        idServico: 3,
+        pet: "cachorro",
+        servico: "tosa P",
+        preco: 99.99,
+        cliente: false,
+    },
+    {
+        idServico: 4,
+        pet: "cachorro",
+        servico: "tosa P",
+        preco: 49.99,
+        cliente: true,
+    },
+    {
+        idServico: 5,
+        pet: "cachorro",
+        servico: "tosa M",
+        preco: 149.99,
+        cliente: false,
+    },
+    {
+        idServico: 6,
+        pet: "cachorro",
+        servico: "tosa M",
+        preco: 74.99,
+        cliente: true,
+    },
+    {
+        idServico: 7,
+        pet: "cachorro",
+        servico: "tosa G",
+        preco: 199.99,
+        cliente: false,
+    },
+    {
+        idServico: 8,
+        pet: "cachorro",
+        servico: "tosa G",
+        preco: 99.99,
+        cliente: true,
+    },
+];
