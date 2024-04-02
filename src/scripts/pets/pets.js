@@ -10,4 +10,20 @@ export function getAllPets() {
   return newData;
 }
 
-console.log(getAllPets());
+export function getById(id) {
+  const newData = dataPets.find(e => e.id === id);
+
+  return newData ? newData : 'Não existe esse Pet';
+};
+
+export function getPetsById(id) {
+  for (let index = 0; index < dataPets.length; index++) {
+    if (dataPets[index].id === id) {
+      return dataPets[index];
+    };    
+  };
+
+  return 'Não existe esse Pet';
+};
+
+console.log(getPetsById(3));

@@ -3,19 +3,21 @@
 #### Checklist Task's do projeto
 
 * [X]  Criação da função que busca um dado pelo seu "id".
-* [ ]  Criar para Mensalidade (getById)
-* [ ]  Criar para Pets (getById)
-* [ ]  Criar para Serviços (getById)
-* [ ]  Criar para Vendas (getById)
+* [x]  Criar para Mensalidade (getById)
+* [x]  Criar para Pets (getById)
+* [x]  Criar para Serviços (getById)
+* [x]  Criar para Vendas (getById)
+* [ ]  Criar função que resgata pelo nome, usar a função de ID como base
+
 
 #### Checklist de Objetivos a serem estudados
 
 * [X]  Conhecer e entender o que é o CRUD (create, read, update, delete).
 * [X]  Práticar o tipo Read (com a função getAll para, clientes, mensalidades, pets, servicos e vendas).
-* [ ]  Práticar mais uma função do tipo Read (getById para todos os dados).
+* [x]  Práticar mais uma função do tipo Read (getById para todos os dados).
 * [ ]  Práticar For e Find
 * [ ]  Prática If Else
-* [ ]  Prática (ternary) operator
+* [x]  Prática (ternary) operator
 
 #### Checklist do GitHub
 

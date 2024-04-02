@@ -10,4 +10,20 @@ export function getAllServicos() {
   return newData;
 }
 
-console.log(getAllServicos());
+export function getById(id) {
+  const newData = dataServicos.find(e => e.idServico === id);
+
+  return newData ? newData : 'Servico não encontrado';
+};
+
+export function getServicosById(id) {
+  for (let index = 0; index < dataServicos.length; index++) {
+    if (dataServicos[index].idServico === id) {
+      return dataServicos[index];
+    };
+    
+  };
+  return 'Não existe esse servico'
+};
+
+console.log(getServicosById(5));

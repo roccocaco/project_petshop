@@ -10,4 +10,10 @@ export function getAllVendas() {
   return newData;
 }
 
-console.log(getAllVendas());
+export function getById(id) {
+  const newData = dataVendas.find(e => e.idVenda === id);
+
+  return newData ? newData : 'Não existe essa venda';
+};
+
+console.log(getById(4));
