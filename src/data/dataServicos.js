@@ -1,4 +1,4 @@
-export const servicos = [
+export const dataServicos = [
     {
         idServico: 1,
         pet: "gato",
