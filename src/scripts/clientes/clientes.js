@@ -1,8 +1,5 @@
 import { dataClientes } from "../../data/dataClientes.js";
 
-// objetivo CRUD clientes
-// Create Read Update Delet
-
 export function getAll() {
     const newData = [];
 
@@ -24,11 +21,25 @@ export function getAllClientes() {
         {
             "idCliente": e.idCliente,
             "cliente": e.cliente,
-            "telefone": e.telefone 
+            "telefone": e.telefone
         }
     ))
 
     return newData;
 }
 
-console.log(getAllClientes());
+export function getById(id) {
+    for (let index = 0; index < dataClientes.length; index++) {
+        if (dataClientes[index].idCliente === id) {
+            return dataClientes[index];
+        };
+    };
+
+    return 'Não existe cliente com esse "id"';
+};
+
+export function getClienteById(id) {
+    const newData = dataClientes.find(e => e.idCliente === id);
+
+    return newData ? newData : 'Não existe cliente com esse "id"';
+};

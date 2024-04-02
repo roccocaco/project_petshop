@@ -1,6 +1,6 @@
-import { dataClientes } from "../data/dataClientes.js";
+import { dataClientes } from "../../data/dataClientes.js";
 
-export function calcSaldo() {
+export function calcMensalidade() {
     let saldo = 0;
 
     for (let index = 0; index < dataClientes.length; index++) {

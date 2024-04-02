@@ -1,6 +1,6 @@
-import { dataVendas } from "../data/dataVendas.js";
+import { dataVendas } from "../../data/dataVendas.js";
 
-export function calcVendas() {
+export function calcServicos() {
   let saldo = 0;
 
   for (let index = 0; index < dataVendas.length; index++) {
