@@ -2,9 +2,10 @@ import { dataServicos } from "../../data/dataServicos.js";
 
 export function getAllServicos() {
   const newData = dataServicos.map((e) => ({
-    idServico: e.idServico,
+    pet: e.pet,
     servico: e.servico,
     preco: e.preco,
+    cliente: e.cliente ? "Cliente" : "Não Cliente", 
   }));
 
   return newData;
@@ -26,4 +27,3 @@ export function getServicosById(id) {
   return 'Não existe esse servico'
 };
 
-console.log(getServicosById(5));
