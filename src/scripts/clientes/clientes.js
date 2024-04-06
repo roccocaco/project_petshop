@@ -43,3 +43,14 @@ export function getClienteById(id) {
 
     return newData ? newData : 'Não existe cliente com esse "id"';
 };
+
+export function getNomeDoCliente(nomeDoCliente) {
+    for (let index = 0; index < dataClientes.length; index++) {
+        if (dataClientes[index].cliente === nomeDoCliente) {
+            return dataClientes[index];
+        }
+        return "Cliente não encontrado";
+    }
+}
+
+console.log(getNomeDoCliente("Israel Mendes"));
