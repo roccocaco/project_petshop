@@ -7,7 +7,7 @@
 * [x]  Criar para Pets (getById)
 * [x]  Criar para Serviços (getById)
 * [x]  Criar para Vendas (getById)
-* [ ]  Criar função que resgata pelo nome, usar a função de ID como base
+* [x]  Criar função que resgata pelo nome, usar a função de ID como base
 
 
 #### Checklist de Objetivos a serem estudados
@@ -15,8 +15,8 @@
 * [X]  Conhecer e entender o que é o CRUD (create, read, update, delete).
 * [X]  Práticar o tipo Read (com a função getAll para, clientes, mensalidades, pets, servicos e vendas).
 * [x]  Práticar mais uma função do tipo Read (getById para todos os dados).
-* [ ]  Práticar For e Find
-* [ ]  Prática If Else
+* [x]  Práticar For e Find
+* [x]  Prática If Else
 * [x]  Prática (ternary) operator
 
 #### Checklist do GitHub
