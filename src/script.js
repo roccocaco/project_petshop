@@ -10,13 +10,17 @@ const servicos = getAllServicos();
 const divServicos = document.getElementById("div-servicos");
 
 function createElementsServicos() {
-  servicos.map(e => divServicos.innerHTML += `
-    <div>
-      <h5>${e.servico} para ${e.cliente} de ${e.pet}</h5>
-      <p>Valor do serviço: R$ ${e.preco} </p>
-
+  servicos.map(
+    (e) =>
+      (divServicos.innerHTML += ` 
+    <div class="col-sm-3 m-5">
+    <h5>${e.servico} para ${e.cliente} de ${e.pet}</h5>
+    <p>Valor do serviço: R$ ${e.preco}</p>
     </div>
+   
+
   `)
+  );
 }
 
 createElementsServicos();
