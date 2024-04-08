@@ -3,9 +3,10 @@ import { dataServicos } from "../../data/dataServicos.js";
 export function getAllServicos() {
   const newData = dataServicos.map((e) => ({
     pet: e.pet,
+    url: e.url,
     servico: e.servico,
     preco: e.preco,
-    cliente: e.cliente ? "Cliente" : "Não Cliente", 
+    cliente: e.cliente ? "Mensalidade" : "Preço Único", 
   }));
 
   return newData;

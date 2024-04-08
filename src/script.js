@@ -13,10 +13,17 @@ function createElementsServicos() {
   servicos.map(
     (e) =>
       (divServicos.innerHTML += ` 
-    <div class="col-sm-4 m-5">
-      <h5>${e.servico} para ${e.cliente} de ${e.pet}</h5>
-      <p>Valor do serviço: R$ ${e.preco}</p>
-    </div>
+
+    <div class="col-sm-4 m-5 text-center">
+
+    <div class="card text-white bg-dark" style="width: 18rem;">
+  <img src=${e.url}>
+  <div class="card-body">
+    <h5 class="card-text text-warning">${e.cliente}</h5>
+    <h6 class="card-text">${e.servico} para ${e.pet}</h6>
+    <p class="card-text">Valor do serviço: R$ ${e.preco}</p>
+  </div>
+</div>
 
   `)
   );
