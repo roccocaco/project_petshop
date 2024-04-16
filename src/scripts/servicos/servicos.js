@@ -6,7 +6,9 @@ export function getAllServicos() {
     url: e.url,
     servico: e.servico,
     preco: e.preco,
-    cliente: e.cliente ? "Mensalidade" : "Preço Único", 
+    cliente: e.cliente ? "Mensalidade" : "Preço Único",
+    css: e.cliente ? "cliente" : "comum",
+    img: e.img 
   }));
 
   return newData;

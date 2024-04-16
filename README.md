@@ -11,14 +11,7 @@
 * [X]  Iniciar o frontend do projeto, criando as pastas pages e assets dentro de src e também criando arquivo    index.html e script.js
 * [X]  Em index.html criar código básíco do HTML e a instalação do Bootstrap e linkar o arquivo script.js como type module
 * [X]  Em script.js importar arquivos da pasta data
-* [X]  Começar o projeto criando a parte dos serviços e a divulgação dos mesmos
-* [ ]  Melhorar o estilo dos serviços colocando em coluna
-* [ ]  Criar em HTML, CSS e BootStrap elementos para descrever como funciona a mensalidade do Pet Shop
-* [ ]  Definir cor primaria e secundaria da aplicação
-* [ ]  Criar um header e footer simples com a cor principal do projeto
-* [ ]  Resgatar imagens de Pets e colocar dentro da pasta assets (imagens do mesmo tamanho)
-* [ ]  Escolher fonte principal e secundaria do projeto
-* [ ]  Instalar BootStrap icones
+* [ ]  Começar o projeto criando a parte dos serviços e a divulgação dos mesmos
 
 #### Checklist de Objetivos a serem estudados
 
@@ -28,9 +21,9 @@
 * [X]  Práticar For e Find
 * [X]  Prática If Else
 * [X]  Prática (ternary) operator
-* [X]  06/04 - importação e exportção de JS
-* [X]  06/04 - estrutura de repetição e condição
-* [X]  06/04 - JS seletores
+* [ ]  06/04 - importação e exportção de JS
+* [ ]  06/04 - estrutura de repetição e condição
+* [ ]  06/04 - JS seletores
 * [ ]  06/04 - Evento 'load'
 
 #### Checklist do GitHub

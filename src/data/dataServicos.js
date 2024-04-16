@@ -1,66 +1,66 @@
 export const dataServicos = [
     {
         idServico: 1,
-        url: "https://media.istockphoto.com/id/926518102/pt/vetorial/bathing-cat-icon.jpg?s=612x612&w=0&k=20&c=7Prh-ZEVf8i6gNIzCXuuo2j9z9B7iCzWmn26dLGtEtE=",
         pet: "Gato",
-        servico: "Banho",
+        servico: "Banho e higienização para gatos de todos os portes",
         preco: 49.99,
         cliente: false,
+        img: "/src/assets/1.png"
     },
     {
-       idServico: 2,
-       url: "https://media.istockphoto.com/id/926518102/pt/vetorial/bathing-cat-icon.jpg?s=612x612&w=0&k=20&c=7Prh-ZEVf8i6gNIzCXuuo2j9z9B7iCzWmn26dLGtEtE=",
+        idServico: 2,
         pet: "Gato",
-        servico: "Banho",
+        servico: "Banho e higienização para gatos de todos os portes",
         preco: 24.99,
         cliente: true,
+        img: "/src/assets/2.png"
     },
     {
         idServico: 3,
-        url: "https://static.vecteezy.com/ti/vetor-gratis/p3/7146356-banho-cao-glifo-icone-grooming-service-animais-de-estimacao-higiene-silhueta-simbolo-negativo-espaco-isolado-ilustracao-vetor.jpg",
         pet: "Cachorro",
-        servico: "Tosa P",
+        servico: "Tosa para cachorro do porte pequeno",
         preco: 99.99,
         cliente: false,
+        img: "/src/assets/4.png"
     },
     {
         idServico: 4,
-        url: "https://static.vecteezy.com/ti/vetor-gratis/p3/7146356-banho-cao-glifo-icone-grooming-service-animais-de-estimacao-higiene-silhueta-simbolo-negativo-espaco-isolado-ilustracao-vetor.jpg",
         pet: "Cachorro",
-        servico: "Tosa P",
+        servico: "Tosa para cachorro do porte pequeno",
         preco: 49.99,
         cliente: true,
+        img: "/src/assets/3.png"
     },
     {
         idServico: 5,
-        url: "https://static.vecteezy.com/ti/vetor-gratis/p3/7146356-banho-cao-glifo-icone-grooming-service-animais-de-estimacao-higiene-silhueta-simbolo-negativo-espaco-isolado-ilustracao-vetor.jpg",
         pet: "Cachorro",
-        servico: "Tosa M",
+        servico: "Tosa para cachorro do porte médio",
         preco: 149.99,
         cliente: false,
+        img: "/src/assets/5.png"
     },
     {
         idServico: 6,
-        url: "https://static.vecteezy.com/ti/vetor-gratis/p3/7146356-banho-cao-glifo-icone-grooming-service-animais-de-estimacao-higiene-silhueta-simbolo-negativo-espaco-isolado-ilustracao-vetor.jpg",
         pet: "Cachorro",
-        servico: "Tosa M",
+        servico: "Tosa para cachorro do porte médio",
         preco: 74.99,
         cliente: true,
+        img: "/src/assets/6.png"
     },
     {
         idServico: 7,
-        url: "https://static.vecteezy.com/ti/vetor-gratis/p3/7146356-banho-cao-glifo-icone-grooming-service-animais-de-estimacao-higiene-silhueta-simbolo-negativo-espaco-isolado-ilustracao-vetor.jpg",
         pet: "Cachorro",
-        servico: "Tosa G",
+        servico: "Tosa para cachorro de porte grande",
         preco: 199.99,
         cliente: false,
+        img: "/src/assets/7.png"
     },
     {
         idServico: 8,
-        url: "https://static.vecteezy.com/ti/vetor-gratis/p3/7146356-banho-cao-glifo-icone-grooming-service-animais-de-estimacao-higiene-silhueta-simbolo-negativo-espaco-isolado-ilustracao-vetor.jpg",
         pet: "Cachorro",
-        servico: "Tosa G",
+        servico: "Tosa para cachorro de porte grande",
         preco: 99.99,
         cliente: true,
+        img: "/src/assets/8.png"
     },
 ];

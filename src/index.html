@@ -5,11 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Document</title>
 </head>
 
 <style>
+  .cliente {
+    background-color: rgba(241, 241, 21, 0.882);
+  }
+
+  .comum {
+    background-color: #ffd700;
+  }
+
+  .text-servicos {
+    font-size: 22px;
+  }
+
   /* Default height for small devices */
   #intro-example {
     height: 400px;
@@ -21,49 +34,81 @@
       height: 600px;
     }
   }
-
-  
 </style>
 
-<header>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body">
-    <div class="container-fluid">
-      <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link text-dark" aria-current="page" href="#">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Sobre nós</a>
-          </li>
-        </ul>
+
+
+
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-warning mb-5">
+      <div class="container-fluid">
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" aria-current="page" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Sobre nós</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div class="container">
+      <h2 class="text-center mb-4">PetChopp</h2>
+      <div class="row">
+        <div class="col-6">
+          <h4 class="text-center">Explore os nossos serviços, onde cuidar do seu companheiro peludo é simples e
+            acessível.</h4 class="text-center">
+          <p class="text-servicos">
+            Com nossos serviços de banho e tosa para gatos e cães de todos os portes, oferecemos preços únicos para quem
+            prefere flexibilidade. Mas aqui está a melhor parte: para clientes cadastrados, os descontos são garantidos!
+            Assine nossa mensalidade e desfrute de economias significativas em todos os serviços, tornando o cuidado do
+            seu
+            animal de estimação ainda mais econômico e prático..
+          </p>
+          <div class="text-center mb-5">
+            <a class="btn btn-lg btn-warning" href="pages/registro/index.html">Cadastre-se</a>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <h4>Mensalidade</h4>
+          <p class="text-servicos"> Para gatos preço a partir de: R$ 14.99.</p>
+          <p class="text-servicos">Para ambos gato e cachorro preço a partir de: R$ 49.99.</p>
+          <p class="text-servicos">Para cachorro pequenos preço a partir de: R$ 24.99.</p>
+          <p class="text-servicos">Para cachorro de médio porte preço a partir de: R$ 34.99.</p>
+          <p class="text-servicos">Para cachorros grandes preço a parti de: R$: 44.99</p>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- Navbar -->
 
-  <!-- Background image -->
-  <div class="p-5 text-center bg-image" style="
+
+    <div class="container">
+      <div class="row d-flex justify-content-around" id="div-servicos"></div>
+    </div>
+
+    <div class="p-5 text-center bg-image" style="
       background-image: url('https://media.istockphoto.com/id/1201660085/pl/zdj%C4%99cie/kot-i-pies-za-pomara%C5%84czowym-biurkiem.jpg?s=170667a&w=0&k=20&c=ffSonXXTX29X2-ACkNPgverLUrVlAl9wIyk5qDjpRB4=');
       height: 400px;
     ">
+    </div>
 
-  </div>
-  <!-- Background image -->
-</header>
-
-<body>
-  <main>
-    <div class="container">
-        <div class="row d-flex justify-content-around" id="div-servicos"></div>
-      </div>
 
     <footer class="bg-body-tertiary text-center">
       <!-- Grid container -->
@@ -72,48 +117,64 @@
         <section class="">
           <div class="row">
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
-                <img src="https://st2.depositphotos.com/36829638/49089/i/450/depositphotos_490897684-stock-photo-portrait-black-cat-looking-distance.jpg" class="w-100" />
+              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light">
+                <img
+                  src="https://st2.depositphotos.com/36829638/49089/i/450/depositphotos_490897684-stock-photo-portrait-black-cat-looking-distance.jpg"
+                  class="w-100" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
-                <img src="https://www.shutterstock.com/image-photo/cat-sits-calmly-looks-confidently-600nw-1903401733.jpg" class="w-100" />
+              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light">
+                <img
+                  src="https://www.shutterstock.com/image-photo/cat-sits-calmly-looks-confidently-600nw-1903401733.jpg"
+                  class="w-100" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
-                <img src="https://nypost.com/wp-content/uploads/sites/2/2022/03/dogs-and-cats.png?w=744" class="w-100" />
+              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light">
+                <img src="https://nypost.com/wp-content/uploads/sites/2/2022/03/dogs-and-cats.png?w=744"
+                  class="w-100" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYn8JkZkhb6SDv38sCLTvm56pGemybiD5t0hhLo6w3wJdIsiQcMesZF06PlDMRpRXRMXg&usqp=CAU" class="w-100" />
+              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYn8JkZkhb6SDv38sCLTvm56pGemybiD5t0hhLo6w3wJdIsiQcMesZF06PlDMRpRXRMXg&usqp=CAU"
+                  class="w-100" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
-                <img src="https://img.freepik.com/premium-photo/cute-labrador-puppy-yellow-background-wink-place-text-pet-dog-high-quality-photo_444187-299.jpg?w=360" class="w-100" />
+              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light">
+                <img
+                  src="https://img.freepik.com/premium-photo/cute-labrador-puppy-yellow-background-wink-place-text-pet-dog-high-quality-photo_444187-299.jpg?w=360"
+                  class="w-100" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
               </div>
             </div>
             <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded" data-ripple-color="light">
-                <img src="https://t4.ftcdn.net/jpg/02/55/40/25/360_F_255402576_HJO2AHiraThBeHX5pvA3APRVOvNLN11V.jpg" class="w-100" />
+              <div data-mdb-ripple-init class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light">
+                <img src="https://t4.ftcdn.net/jpg/02/55/40/25/360_F_255402576_HJO2AHiraThBeHX5pvA3APRVOvNLN11V.jpg"
+                  class="w-100" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
                 </a>
@@ -136,7 +197,9 @@
   </main>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <script src="script.js" type="module"></script>
 </body>
 
