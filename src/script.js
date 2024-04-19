@@ -21,8 +21,8 @@ function createElementsServicos() {
           <h5 class="card-text">${e.cliente}</h5>
           <p class="card-text">${e.servico}</p>
           <p class="card-text">Valor do serviço: <span class="fw-bold">R$ ${e.preco}</span></p>
-          <button class="btn btn-danger mb-2">Adicionar Serviço</button>
-          <a href="/src/pages/servicos/index.html" class="btn btn-success">Finalizar Serviço</a>
+          <button class="btn btn-success mb-2">Adicionar Serviço</button>
+          <a href="/src/pages/servicos/index.html" class="btn btn-danger">Finalizar Serviço</a>
         </div>
       </div>
     </div>
