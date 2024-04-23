@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <title>PetChopp</title>
+</head>
+
+<style>
+  .cliente {
+    background-color: #ffd700;
+  }
+
+  .comum {
+    background-color: #f7d547;
+  }
+
+  .text-servicos {
+    font-size: 22px;
+  }
+
+  /* Default height for small devices */
+  #intro-example {
+    height: 100px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+
+    /* Color of the links BEFORE scroll */
+    .navbar-scroll .nav-link,
+    .navbar-scroll .fa-bars,
+    .navbar-scroll .navar-brand {
+      color: #4f4f4f;
+    }
+
+    .navbar-scroll .nav-link:hover {
+      color: #f7d547;
+    }
+
+    /* Color of the links AFTER scroll */
+    .navbar-scrolled .nav-link,
+    .navbar-scrolled .fa-bars,
+    .navbar-scrolled .navar-brand {
+      color: #4f4f4f;
+    }
+
+    /* Color of the navbar AFTER scroll */
+    .navbar-scroll,
+    .navbar-scrolled {
+      background-color: #fff;
+    }
+
+    /* An optional height of the navbar AFTER scroll */
+    .navbar.navbar-scroll.navbar-scrolled {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    body {
+      background-color: #eee;
+    }
+  }
+</style>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-scroll mb-5">
+      <div class="container">
+        <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png" height="70" alt="" loading="lazy" />
+        <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="src/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="pages/servicos/index.html">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="pages/contato/index.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="pages/sobreNos/index.html">Sobre Nós</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="https://www.linkedin.com/in/roccocaco/">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="https://github.com/roccocaco">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container d-flex justify-content-center">
+      <div class="row mb-5">
+        <h3>PetChopp</h3>
+        <p>Endereço: Rua dos Amigos Peludos, 123</p>
+        <p>Bairro dos Animais Felizes</p>
+        <p> Cidade Petrópolis, Estado do Bichinho Feliz</p>
+        <p> CEP: 12345-678</p>
+        <p>Telefone: (12) 3456-7890</p>
+        <p>E-mail: contato@petchopp.com</p>
+        <p>Horário de Funcionamento:</p>
+        <p>Segunda a Sexta: 9:00 - 18:00</p>
+        <p>Sábado: 9:00 - 15:00</p>
+        <p>Domingo: Fechado</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/roccocaco/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-linkedin"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/roccocaco" role="button" data-mdb-ripple-color="dark"><i class="bi bi-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-muted p-3" style="background-color: #fff;">
+      © 2024 Copyright:
+      <a class="text-dark" href="#">Rocco Caco</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

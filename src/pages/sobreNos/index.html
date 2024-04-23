@@ -9,36 +9,156 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-  <title>PetChopp - Sobre Nós</title>
+  <title>PetChopp</title>
 </head>
 
+<style>
+  .cliente {
+    background-color: #ffd700;
+  }
+
+  .comum {
+    background-color: #f7d547;
+  }
+
+  .text-servicos {
+    font-size: 22px;
+  }
+
+  /* Default height for small devices */
+  #intro-example {
+    height: 100px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+
+    /* Color of the links BEFORE scroll */
+    .navbar-scroll .nav-link,
+    .navbar-scroll .fa-bars,
+    .navbar-scroll .navar-brand {
+      color: #4f4f4f;
+    }
+
+    .navbar-scroll .nav-link:hover {
+      color: #f7d547;
+    }
+
+    /* Color of the links AFTER scroll */
+    .navbar-scrolled .nav-link,
+    .navbar-scrolled .fa-bars,
+    .navbar-scrolled .navar-brand {
+      color: #4f4f4f;
+    }
+
+    /* Color of the navbar AFTER scroll */
+    .navbar-scroll,
+    .navbar-scrolled {
+      background-color: #fff;
+    }
+
+    /* An optional height of the navbar AFTER scroll */
+    .navbar.navbar-scroll.navbar-scrolled {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    body {
+      background-color: #eee;
+    }
+  }
+</style>
+
 <body>
+
   <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-warning mb-5">
-      <div class="container-fluid">
-        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+    <nav class="navbar navbar-expand-lg navbar-scroll mb-5">
+      <div class="container">
+        <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png" height="70" alt="" loading="lazy" />
+        <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Home</a>
-            </li>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link text-dark" aria-current="page" href="#">Contato</a>
+              <a class="nav-link" aria-current="page" href="pages/src/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Serviços</a>
+              <a class="nav-link" aria-current="page" href="pages/servicos/index.html">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Sobre nós</a>
+              <a class="nav-link" aria-current="page" href="pages/contato/index.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="pages/sobreNos/index.html">Sobre Nós</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="https://www.linkedin.com/in/roccocaco/">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="https://github.com/roccocaco">
+                <i class="bi bi-github"></i>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
+  <main>
+    <div class="container d-flex justify-content-center">
+      <div class="row mb-5">
+        <h3>Bem-vindo ao PetChopp !</h3>
+        <p>Somos apaixonados por pets e comprometidos em oferecer produtos e serviços de alta qualidade para atender às necessidades dos nossos clientes peludos e de seus tutores. Desde 1997, temos sido uma parte vital da comunidade de amantes de animais de estimação, fornecendo uma ampla gama de produtos e serviços para garantir que os animais recebam os melhores cuidados possíveis.
+
+        <p>No PetChopp, acreditamos que todos os pets merecem amor, cuidado e atenção especial. Nossa equipe é composta por amantes de animais dedicados, prontos para oferecer orientação e assistência personalizada para você e seu companheiro peludo. Desde a seleção do alimento mais adequado até o fornecimento de acessórios e serviços de higiene, estamos aqui para ajudar a tornar a vida do seu pet mais feliz e saudável.</p>
+
+        <p>Nosso compromisso com a excelência se reflete em nossa seleção cuidadosamente curada de produtos de marcas confiáveis, que atendem aos mais altos padrões de qualidade e segurança. Além disso, nossa equipe está sempre atualizada com as últimas tendências e informações sobre cuidados com animais de estimação, para garantir que você receba os melhores conselhos e recomendações.</p>
+
+        <p>No PetChopp, valorizamos a confiança e o relacionamento duradouro com nossos clientes. Estamos empenhados em construir uma comunidade onde todos os amantes de animais possam encontrar o suporte e os recursos de que precisam para proporcionar uma vida feliz e saudável para seus pets.</p>
+
+        <p>Obrigado por escolher o PetChopp como seu destino para todas as necessidades do seu pet. Estamos ansiosos para conhecê-lo e para cuidar do seu companheiro peludo!</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="container">
+    <div class="row d-flex justify-content-around" id="div-servicos"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalServico" tabindex="-1" aria-labelledby="modalServicoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalServicoLabel">Carinho de Serviços</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal-body-servico">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cotinuar Comprando</button>
+            <a href="pages/servicos/index.html" type="button" class="btn btn-danger">Finalizar Serviço</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-5 text-center bg-image" style="
+    background-image: url('https://media.istockphoto.com/id/1201660085/pl/zdj%C4%99cie/kot-i-pies-za-pomara%C5%84czowym-biurkiem.jpg?s=170667a&w=0&k=20&c=ffSonXXTX29X2-ACkNPgverLUrVlAl9wIyk5qDjpRB4=');
+    height: 400px;
+  ">
+  </div>
 
   <footer class="text-center text-white" style="background-color: #f1f1f1;">
     <!-- Grid container -->
@@ -49,15 +169,15 @@
         <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/roccocaco/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-linkedin"></i></a>
         <!-- Github -->
         <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/roccocaco" role="button" data-mdb-ripple-color="dark"><i class="bi bi-github"></i></a>
-        <!-- Section: Social media -->
       </section>
+      <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center text-muted p-3" style="background-color: #fff;">
       © 2024 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/">Rocco Caco</a>
+      <a class="text-dark" href="#">Rocco Caco</a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -68,7 +188,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js" type="module"></script>
-
 </body>
 
 </html>
