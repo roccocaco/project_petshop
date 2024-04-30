@@ -4,7 +4,7 @@ export const dataClientes = [
     cliente: "Israel Mendes",
     telefone: "(11) 41593168",
     idPets: [1],
-    idMensalidade: 4,
+    idMensalidade: 3,
     idServicos: 6,
   },
 
@@ -49,7 +49,7 @@ export const dataClientes = [
     cliente: "Chaves",
     telefone: "(11) 41596578",
     idPets: [6],
-    idMensalidade: 3,
+    idMensalidade: 2,
     idServicos: 4,
   },
 
@@ -58,7 +58,7 @@ export const dataClientes = [
     cliente: "Paulo Costa",
     telefone: "(11) 41567515",
     idPets: [7],
-    idMensalidade: 3,
+    idMensalidade: 2,
     idServicos: 4,
   },
 
