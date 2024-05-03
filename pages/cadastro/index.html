@@ -171,11 +171,13 @@
             <form id="form-cadastro" class="row">
                 <div class="col-12">
                     <div>
-                        <input type="text" id="input-nome" name="nome" class="form-control input-custom mb-2" placeholder="Nome Completo" required />
+                        <input type="text" id="input-nome" name="nome" class="form-control input-custom mb-2"
+                            placeholder="Nome Completo" required />
                     </div>
                 </div>
                 <div class="col-12">
-                    <select id="options-mensalidade" class="form-select form-select-md mb-2" name="mensalidade" required>
+                    <select id="options-mensalidade" class="form-select form-select-md mb-2" name="mensalidade"
+                        required>
                         <option selected value="0">Mensalidade</option>
                         <option value="1">Para gatos</option>
                         <option value="2">Para cachorros pequenos</option>
@@ -191,8 +193,18 @@
                 </div>
                 <div class="col-12">
                     <div class="form-outline">
-                        <input type="password" id="typeSenha" class="form-control input-custom mb-2" placeholder="Senha" name="senha" required />
+                        <input type="password" id="typeSenha" class="form-control input-custom mb-2" placeholder="Senha"
+                            name="senha" required />
                     </div>
+                </div>
+                <div class="col-12">
+                    <select id="options-mensalidade" class="form-select form-select-md mb-2" name="idMensalidade"
+                        required>
+                        <option selected value="0">Mensalidade</option>
+                        <option value="1">Para gatos</option>
+                        <option value="2">Para cachorros</option>
+                        <option value="3">Para ambos</option>
+                    </select>
                 </div>
 
                 <div id="resultado-mensalidade">

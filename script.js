@@ -9,8 +9,8 @@ let valorTotal = 0;
 
 function createElementsServicos() {
   servicos.map((e) => divServicos.innerHTML += ` 
-    <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mb-2">
-      <div class="card ${e.css}" style="width: 18rem;">
+    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+      <div class="card ${e.css}" style="width: 24rem;">
         <img src="${e.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-text">${e.cliente}</h5>

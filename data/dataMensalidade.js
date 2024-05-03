@@ -1,28 +1,18 @@
 export const dataMensalidade = [
     {
         idMensalidade: 1,
-        pet: "gato",
-        preco: 14.99,
+        pet: "Gatos",
+        preco: 15,
     },
     {
         idMensalidade: 2,
-        pet: "cachorro P",
-        preco: 24.99,
+        pet: "Cachorros",
+        preco: 30,
     },
     {
         idMensalidade: 3,
-        pet: "cachorro M",
-        preco: 34.99,
+        pet: "Ambos",
+        preco: 40,
     },
-    {
-        idMensalidade: 4,
-        pet: "cachorro G",
-        preco: 44.99,
-    },
-    {
-        idMensalidade: 5,
-        pet: "ambos",
-        preco: 49.99,
-    }
-]
+];
 
