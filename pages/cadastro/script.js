@@ -1,20 +1,18 @@
 // IMPORTAÇÕES
 import { dataClientes } from "../../data/dataClientes.js";
-import { dataMensalidade } from "../../data/dataMensalidade.js";
 
 // SELETORES
 const formCadastro = document.getElementById('form-cadastro');
 const resultadoMensalidade = document.getElementById('resultado-mensalidade');
 
-let data = {
-    idCliente: "",
-    cliente: "",
+let dataLocalStorage = [];
+
+let dataCadastro = {
+    id: "",
+    nomeCompleto: "",
     telefone: "",
     email: "",
     password: "",
-    idPets: [],
-    idMensalidade: "",
-    idServicos: "",
 };
 
 // EVENTOS
@@ -23,54 +21,36 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!localStorage.getItem('usuarios')) {
         // Vamos Adicionar um array de objetos
         localStorage.setItem('usuarios', JSON.stringify(dataClientes));
-    };
-
+    } else {
+        dataLocalStorage = JSON.parse(localStorage.getItem('usuarios'));
+        console.log(dataLocalStorage)
+    }
 });
 
 formCadastro.addEventListener('submit', (event) => {
     // previne a atualização da pagina
     event.preventDefault();
 
-    console.log('RESULTADO DO CLICK', data)
-
-    if (data.idMensalidade === '0') {
-        return alert('Escolha uma mensalidade');
-    }
+    // ADICIONAR UM NOVO ID
+    // VERIFICA O TAMANHO DO ARRAY e ADICIONA MAIS UM
+    dataCadastro.id = dataLocalStorage.length + 1;
 
     // USAR LOCAL STORAGE PARA ARMAZENAR O VALOR DE DATA no LOCAL STORAGE
-    localStorage.setItem('usuarios', JSON.stringify(data));
+    dataLocalStorage.push(dataCadastro);
+    localStorage.setItem('usuarios', JSON.stringify(dataLocalStorage));
 
     alert('Usuário cadastrado com sucesso!');
-    // window.location.reload();
+    window.location.reload();
 });
 
 formCadastro.addEventListener('change', ({ target }) => {
     const { value, name } = target;
-
-
-    data = {
-        ...data,
+    dataCadastro = {
+        ...dataCadastro,
         [name]: value
     }
 
-    console.log(data);
-
-    switch (data.idMensalidade) {
-        case '0':
-            resultadoMensalidade.innerHTML = '<p>Escolha uma mensalidade</p>'
-            break;
-        case '1':
-            resultadoMensalidade.innerHTML = `<p>O valor da mensalidade é: R$ ${dataMensalidade[0].preco}</p>`
-            break;
-        case '2':
-            resultadoMensalidade.innerHTML = `<p>O valor da mensalidade é: R$ ${dataMensalidade[1].preco}</p>`
-            break;
-        case '3':
-            resultadoMensalidade.innerHTML = `<p>O valor da mensalidade é: R$ ${dataMensalidade[2].preco}</p>`
-            break;
-        default:
-            break;
-    }
+    console.log(dataCadastro);
 });
 
 

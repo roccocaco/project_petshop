@@ -4,24 +4,10 @@
 
 export const dataClientes = [
   {
-    idCliente: 1,
-    cliente: "Rocco",
-    telefone: "(11) 41593168",
-    email: "rocco@email.com",
-    password: "1234",
-    pets: [
-      {
-        idPet: 1,
-        pet: "Gato",
-        nome: "Bob",
-      },
-      {
-        idPet: 2,
-        pet: "Cachorro",
-        nome: "Rex",
-      },
-    ],
-    idMensalidade: 3,
-    idServicos: 6,
-  },
-]
+    id: 1,
+    nomeCompleto: "Gabriel Barbosa Santos",
+    telefone: "(11) 999554552",
+    email: "gabriel@email.com",
+    password: "123456abc"
+  }
+];

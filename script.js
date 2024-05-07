@@ -13,8 +13,8 @@ function createElementsServicos() {
       <div class="card ${e.css}" style="width: 24rem;">
         <img src="${e.img}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-text">${e.cliente}</h5>
-          <p class="card-text">${e.servico}</p>
+          <h5 class="card-text">${e.servico}</h5>
+          <p class="card-text">${e.descricao}</p>
           <p class="card-text">Valor do serviço: <span class="fw-bold">R$ ${e.preco}</span></p>
           <button class="btn btn-success btn-add mb-2" data-bs-toggle="modal" data-bs-target="#modalServico">Adicionar Serviço</button>
         </div>
