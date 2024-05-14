@@ -4,15 +4,15 @@ export const dataServicos = [
         servico: "Serviço Comum para Gato",
         descricao: "Banho e higienização, vacinas obrigatórias e consulta para cada gato.",
         preco: 75,
-        img: "assets/1.png",
+        img: "assets/2.png",
         css: true
     },
     {
         id: 2,
         servico: "Serviço Premium para Gato",
-        descricao: "Banho e higienização, vacinas obrigatórias, consulta, exame laboratorial simples e complexos, exames de imagens, anestesia e cirurgias para cada gato.",
+        descricao:"Banho e higienização, vacinas obrigatórias, consulta, exame laboratorial simples e complexos, exames de imagens, anestesia e cirurgias para cada gato.",
         preco: 140,
-        img: "assets/2.png",
+        img: "assets/1.png",
         css: false
     },
     {
@@ -20,7 +20,7 @@ export const dataServicos = [
         servico: "Serviço Comum para Cachorro",
         descricao: "Banho e higienização, vacinas obrigatórias e consulta para cada cachorro.",
         preco: 90,
-        img: "assets/4.png",
+        img: "assets/3.png",
         css: true
     },
     {
@@ -28,7 +28,7 @@ export const dataServicos = [
         servico: "Serviço Premium para Cachorro",
         descricao: "Banho e higienização, vacinas obrigatórias, consulta, exame laboratorial simples e complexos, exames de imagens, anestesia e cirurgias para cada cachorro.",
         preco: 170,
-        img: "assets/3.png",
+        img: "assets/4.png",
         css: false
     },
     {
@@ -36,7 +36,7 @@ export const dataServicos = [
         servico: "Serviço Comum para Ambos",
         descricao: "Banho e higienização, vacinas obrigatórias e consulta para um gato e cachorro.",
         preco: 155,
-        img: "assets/5.png",
+        img: "assets/6.png",
         css: true
     },
     {
