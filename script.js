@@ -7,6 +7,8 @@ let btnAdd = document.querySelectorAll('.btn-add');
 
 let valorTotal = 0;
 
+let localStorageValorTotal = parseFloat(localStorage.getItem('valorTotal')) || 0;
+
 function createElementsServicos() {
   servicos.map((e) => divServicos.innerHTML += ` 
     <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
@@ -32,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
       modalBodyServico.innerHTML = `
         <p>Valor Total: ${valorTotal += servicos[index].preco}</p>
       `;
+      localStorage.setItem('valorTotal', valorTotal);
     })
   });
 });
