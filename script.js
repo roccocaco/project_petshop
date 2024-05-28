@@ -7,7 +7,11 @@ let btnAdd = document.querySelectorAll('.btn-add');
 
 let valorTotal = 0;
 
-let localStorageValorTotal = parseFloat(localStorage.getItem('valorTotal')) || 0;
+const checkOut = {
+  servicos: [],
+  valores: [],
+  valorTotal
+};
 
 function createElementsServicos() {
   servicos.map((e) => divServicos.innerHTML += ` 
@@ -33,8 +37,14 @@ window.addEventListener('DOMContentLoaded', () => {
     element.addEventListener('click', () => {
       modalBodyServico.innerHTML = `
         <p>Valor Total: ${valorTotal += servicos[index].preco}</p>
+        <p>${servicos[index].servico}</p>
       `;
-      localStorage.setItem('valorTotal', valorTotal);
+
+      checkOut.servicos.push(servicos[index].servico);
+      checkOut.valores.push(servicos[index].preco);
+      checkOut.valorTotal = valorTotal;
+
+      localStorage.setItem('valorTotal', JSON.stringify(checkOut));
     })
   });
 });
