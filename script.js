@@ -10,6 +10,7 @@ let valorTotal = 0;
 const checkOut = {
   servicos: [],
   valores: [],
+  imgs: [],
   valorTotal
 };
 
@@ -40,8 +41,11 @@ window.addEventListener('DOMContentLoaded', () => {
         <p>${servicos[index].servico}</p>
       `;
 
+
+      console.log(servicos);
       checkOut.servicos.push(servicos[index].servico);
       checkOut.valores.push(servicos[index].preco);
+      checkOut.imgs.push(servicos[index].img)
       checkOut.valorTotal = valorTotal;
 
       localStorage.setItem('valorTotal', JSON.stringify(checkOut));

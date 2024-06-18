@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="shortcut icon" type="imagex/png" href="assets/1.logotipo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./style.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
     <title>PetChopp</title>
 </head>
 
@@ -80,7 +86,9 @@
         <nav class="navbar navbar-expand-lg navbar-scroll mb-5">
             <div class="container">
                 <a href="../../index.html"><img src="../../assets/nav.logo.ico" width=60 height=40></a>
-                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
                         <i class="fas fa-bars"></i>
                     </span>
@@ -108,9 +116,66 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div class="" id="div-checkout">
-    </main>
+    <section class="h-100 gradient-custom">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center my-4">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Serviços</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Single item -->
+                            <div class="row" id="div-card-body">
+
+                            </div>
+                            <!-- Single item -->
+                            <hr class="my-4" />
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p><strong>Estimativa de entrega</strong></p>
+                            <p class="mb-0">No máximo em 5 dias</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body">
+                            <p><strong>Métodos de pagamento</strong></p>
+                            <img class="me-2" width="45px"
+                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                                alt="Visa" />
+                            <img class="me-2" width="45px"
+                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                                alt="American Express" />
+                            <img class="me-2" width="45px"
+                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                                alt="Mastercard" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Resumo</h5>
+                        </div>
+                        <div class="card-body" id="div-card-resumo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
 
     <footer class="text-center text-white mt-5" style="background-color: #ffd700;">
         <!-- Grid container -->
@@ -118,9 +183,11 @@
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Linkedin -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/roccocaco/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-linkedin"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/roccocaco/"
+                    role="button" data-mdb-ripple-color="dark"><i class="bi bi-linkedin"></i></a>
                 <!-- Github -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/roccocaco" role="button" data-mdb-ripple-color="dark"><i class="bi bi-github"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/roccocaco"
+                    role="button" data-mdb-ripple-color="dark"><i class="bi bi-github"></i></a>
             </section>
             <!-- Section: Social media -->
         </div>
@@ -138,8 +205,12 @@
     </main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
     <script src="script.js" type="module"></script>
+
 </body>
 
 </html>
