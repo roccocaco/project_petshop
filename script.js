@@ -3,7 +3,7 @@ import { getAllServicos } from "./scripts/servicos/servicos.js";
 const servicos = getAllServicos();
 const divServicos = document.getElementById("div-servicos");
 const modalBodyServico = document.getElementById("modal-body-servico");
-let btnAdd = document.querySelectorAll('.btn-add');
+let btnAdd = document.querySelectorAll(".btn-add");
 
 let valorTotal = 0;
 
@@ -11,11 +11,13 @@ const checkOut = {
   servicos: [],
   valores: [],
   imgs: [],
-  valorTotal
+  valorTotal,
 };
 
 function createElementsServicos() {
-  servicos.map((e) => divServicos.innerHTML += ` 
+  servicos.map(
+    (e) =>
+      (divServicos.innerHTML += ` 
     <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
       <div class="card ${e.css}" style="width: 24rem;">
         <img src="${e.img}" class="card-img-top" alt="...">
@@ -27,31 +29,27 @@ function createElementsServicos() {
         </div>
       </div>
     </div>`)
-  btnAdd = document.querySelectorAll('.btn-add');
-};
+  );
+  btnAdd = document.querySelectorAll(".btn-add");
+}
 
-
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
   createElementsServicos();
 
   btnAdd.forEach((element, index) => {
-    element.addEventListener('click', () => {
+    element.addEventListener("click", () => {
       modalBodyServico.innerHTML = `
-        <p>Valor Total: ${valorTotal += servicos[index].preco}</p>
+        <p>Valor Total: ${(valorTotal += servicos[index].preco)}</p>
         <p>${servicos[index].servico}</p>
       `;
-
 
       console.log(servicos);
       checkOut.servicos.push(servicos[index].servico);
       checkOut.valores.push(servicos[index].preco);
-      checkOut.imgs.push(servicos[index].img)
+      checkOut.imgs.push(servicos[index].img);
       checkOut.valorTotal = valorTotal;
 
-      localStorage.setItem('valorTotal', JSON.stringify(checkOut));
-    })
+      localStorage.setItem("valorTotal", JSON.stringify(checkOut));
+    });
   });
 });
-
-
-
