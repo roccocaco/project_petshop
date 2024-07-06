@@ -13,27 +13,27 @@ export function getAllMensalidade() {
 }
 
 // Função para obter uma mensalidade por ID utilizando o método find
-export function getById(id) {
-  const newData = dataMensalidade.find(e => e.idMensalidade === id);
 
-  return newData ? newData : 'Não encontramos essa mensalidade'; // Retorna a mensalidade encontrada ou uma mensagem se não encontrada
-};
+export function getById(id) {
+  const newData = dataMensalidade.find((e) => e.idMensalidade === id);
+
+  return newData ? newData : "Não encontramos essa mensalidade"; // Retorna a mensalidade encontrada ou uma mensagem se não encontrada
+}
 
 // Função para obter uma mensalidade por ID utilizando um loop for
+
 export function getMensalidadeById(id) {
   // Itera sobre o array dataMensalidade e retorna a primeira mensalidade com o ID correspondente
   for (let index = 0; index < dataMensalidade.length; index++) {
     if (dataMensalidade[index].idMensalidade === id) {
       return dataMensalidade[index];
-    };
-  };
+    }
+  }
 
-  return 'Mensalidade não encontrada'; // Retorna uma mensagem se a mensalidade não for encontrada
-};
+  return "Mensalidade não encontrada"; // Retorna uma mensagem se a mensalidade não for encontrada
+}
 
 console.log(getMensalidadeById(4)); // Exemplo de uso da função getMensalidadeById com um ID específico
-
-
 
 //Este código define três funções para manipular o array dataMensalidade, cada uma com um propósito específico:
 
